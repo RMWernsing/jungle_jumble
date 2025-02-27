@@ -33,9 +33,9 @@ export class Animals {
      <div class="mt-2">
             <div class="p-3 bg-light">
               <h2>
-                🐔 Joeseph
+                ${this.emoji} ${this.name}
               </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, non?</p>
+              <p>${this.content}</p>
             </div>
             <div class="bg-light mt-5 p-2">
               <form>
