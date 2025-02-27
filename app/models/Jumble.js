@@ -14,4 +14,17 @@ export class Animals {
     this.content = data.content
 
   }
+
+  get listTemplateHTML() {
+    return `
+    <div class="d-flex align-items-center ps-2 fs-4">
+                <button>
+                  start
+                </button>
+                <p>🐔</p>
+                <p>Jumble</p>
+                <hr>
+              </div>
+    `
+  }
 }
