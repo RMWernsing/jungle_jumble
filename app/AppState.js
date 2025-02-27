@@ -22,6 +22,8 @@ class ObservableAppState extends EventEmitter {
     })
   ]
 
+  activeAnimal = null
+
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())

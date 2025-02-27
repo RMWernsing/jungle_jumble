@@ -18,4 +18,11 @@ export class AnimalsController {
     animalListElem.innerHTML = animalCardContent
   }
 
+  setActiveAnimal(animalId) {
+
+    console.log('this animal has an id of', animalId)
+
+
+  }
+
 }

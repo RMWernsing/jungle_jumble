@@ -41,7 +41,7 @@ export class Animals {
               <form>
                 <!-- <label for="jumbleContent"></label> -->
                 <textarea name="content" id="jumbleContent" placeholder="Start Typing!!!"></textarea>
-                <button class="form-button">submit</button>
+                <button onclick="app.animalsController.setActiveAnimal('${this.id}')." class="form-button">submit</button>
               </form>
             </div>
           </div>
