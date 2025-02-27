@@ -21,7 +21,7 @@ export class Animals {
                 <button>
                   start
                 </button>
-                <p>🐔</p>
+                <p>${this.emoji}</p>
                 <p>Jumble</p>
                 <hr>
               </div>
