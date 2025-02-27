@@ -1,7 +1,10 @@
 import { AppState } from "../AppState.js";
+import { animalService } from "../services/AnimalsService.js";
 
 export class AnimalsController {
   constructor() {
+
+    AppState.on('activeAnimal', this.drawActiveAnimal)
     console.log("controller works!!!");
     this.drawAnimalList()
 
@@ -20,9 +23,20 @@ export class AnimalsController {
 
   setActiveAnimal(animalId) {
 
-    console.log('this animal has an id of', animalId)
+    // console.log('this animal has an id of', animalId)
+    animalService.setActiveAnimalCard(animalId)
 
 
   }
 
+  drawActiveAnimal() {
+
+    const animal = AppState.activeAnimal
+
+
+
+    const drawnAnimalElem = document.getElementById('activeAnimal')
+    drawnAnimalElem.innerHTML = animal.activeAnimalHTML
+
+  }
 }

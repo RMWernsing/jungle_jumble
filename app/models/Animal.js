@@ -18,7 +18,7 @@ export class Animals {
   get listTemplateHTML() {
     return `
     <div class="d-flex align-items-center ps-2 fs-4">
-                <button>
+                <button onclick="app.animalsController.setActiveAnimal('${this.id}')">
                   start
                 </button>
                 <p>${this.emoji}</p>
@@ -41,7 +41,7 @@ export class Animals {
               <form>
                 <!-- <label for="jumbleContent"></label> -->
                 <textarea name="content" id="jumbleContent" placeholder="Start Typing!!!"></textarea>
-                <button onclick="app.animalsController.setActiveAnimal('${this.id}')." class="form-button">submit</button>
+                <button  class="form-button">submit</button>
               </form>
             </div>
           </div>

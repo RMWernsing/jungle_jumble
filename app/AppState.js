@@ -22,6 +22,9 @@ class ObservableAppState extends EventEmitter {
     })
   ]
 
+  /**
+   * @type {Animals}
+   */
   activeAnimal = null
 
 }
