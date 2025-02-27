@@ -3,8 +3,9 @@ import { generateId } from "../utils/GenerateId.js";
 export class Animals {
 
 
+
   /**
-   * @param {any} data
+   * @param {{ emoji: string; name: string; content: string; }} data
    */
   constructor(data) {
     this.id = generateId()
