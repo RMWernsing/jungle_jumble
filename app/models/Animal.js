@@ -27,4 +27,24 @@ export class Animals {
               </div>
     `
   }
+
+  get activeAnimalHTML() {
+    return `
+     <div class="mt-2">
+            <div class="p-3 bg-light">
+              <h2>
+                🐔 Joeseph
+              </h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, non?</p>
+            </div>
+            <div class="bg-light mt-5 p-2">
+              <form>
+                <!-- <label for="jumbleContent"></label> -->
+                <textarea name="content" id="jumbleContent" placeholder="Start Typing!!!"></textarea>
+                <button class="form-button">submit</button>
+              </form>
+            </div>
+          </div>
+    `
+  }
 }
