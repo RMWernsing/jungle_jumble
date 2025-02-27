@@ -1,10 +1,10 @@
-import { Animals } from './models/Jumble.js'
+import { Animals } from './models/Animal.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
 class ObservableAppState extends EventEmitter {
 
-  animal = [
+  animals = [
     new Animals({
       name: 'Joeseph',
       emoji: '🐔',
