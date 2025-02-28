@@ -38,10 +38,10 @@ export class Animals {
               <p>${this.content}</p>
             </div>
             <div class="bg-light mt-5 p-2">
-              <form>
+              <form onsubmit="app.animalsController.checkJumbleContent()">
                 <!-- <label for="jumbleContent"></label> -->
                 <textarea name="content" id="jumbleContent" placeholder="Start Typing!!!"></textarea>
-                <button  class="form-button">submit</button>
+                <button type="submit" class="form-button">submit</button>
               </form>
             </div>
           </div>

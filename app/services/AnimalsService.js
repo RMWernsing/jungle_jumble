@@ -15,11 +15,7 @@ class AnimalService {
     AppState.activeAnimal = foundAnimal
 
 
-
-
   }
-
-
 
 
 

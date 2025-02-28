@@ -1,5 +1,6 @@
 import { AppState } from "../AppState.js";
 import { animalService } from "../services/AnimalsService.js";
+import { getFormData } from "../utils/FormHandler.js";
 
 export class AnimalsController {
   constructor() {
@@ -21,14 +22,6 @@ export class AnimalsController {
     animalListElem.innerHTML = animalCardContent
   }
 
-  setActiveAnimal(animalId) {
-
-    // console.log('this animal has an id of', animalId)
-    animalService.setActiveAnimalCard(animalId)
-
-
-  }
-
   drawActiveAnimal() {
 
     const animal = AppState.activeAnimal
@@ -38,5 +31,32 @@ export class AnimalsController {
     const drawnAnimalElem = document.getElementById('activeAnimal')
     drawnAnimalElem.innerHTML = animal.activeAnimalHTML
 
+
   }
+  setActiveAnimal(animalId) {
+
+    // console.log('this animal has an id of', animalId)
+    animalService.setActiveAnimalCard(animalId)
+
+
+  }
+
+  checkJumbleContent() {
+    event.preventDefault()
+
+    const animal = AppState.activeAnimal
+
+    const formElem = event.target
+
+    const rawAnimalData = getFormData(formElem)
+
+
+    console.log(animal, rawAnimalData);
+    if (rawAnimalData.content == animal.content) {
+      window.alert('CONGRAGULATIONS!!! YOU ARE SMART!!!')
+    }
+
+  }
+
+
 }
